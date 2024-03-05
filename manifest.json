@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Reconnect for Ring",
+    "version": "1.0",
+    "description": "Automatically clicks the 'Reconnect' button on Ring's website.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.ring.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.jpg"
+    }
+  }
